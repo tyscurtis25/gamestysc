@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="website of games">
+
+    <!-- meta for favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- TITLE and STYLESHEETS -->
+    <title>games|tysc - roulette</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="../css/mystyles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="row">
+                <div class="col-3">
+                    <h1>games | tysc</h1>
+                </div>
+                <div class="col pt-4">
+                    <img src="../img/die5.png" height="40px">
+                </div>
+            </div>
+
+            <div class="nav-menu row">
+                <nav>
+                    <ul>
+                        <li>
+                            <button type="button"><a href="../index.html" style="text-decoration: none">home</a></button>
+                        </li>
+                        <li>
+                            <button type="button"><a href="#" style="text-decoration: none">roulette</a></button>
+                        </li>
+                        <li>
+                            <button type="button"><a href="snake.html" style="text-decoration: none">snake</a></button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="game-table row">
+            <!-- <div class="intro-space">
+                
+            </div> -->
+            <div class="col intro-space">
+                <p id="intro-space">How to play:</p>
+                <ul>
+                    <li>You will begin with $100 (virtual) to bet</li>
+                    <li>There are 3 different kinds of bets with increasingly higher returns.</li>
+                    <ol>
+                        <li>Bet on color: guess if it will land on red or black. This bet is 1-1, which means
+                            you will win as much as you bet (ex. if you bet say, $100, and get it right, you
+                            will win that much virtual money)</li>
+                        <li>Bet on group of 12: guess which group of 12 the ball will land (1-12, 13-24, 25-36).
+                            This bet is 2-1, meaning you win double the amount you bet.</li>
+                        <li>Bet on single number: guess which exact number it will land on. This bet is 20-1, meaning
+                            upon guessing the correct value, you will win 20 times that value.</li>
+                    </ol>
+                    <li>Note: if you guess incorrectly, the amount you put in to bet will be subtracted from your
+                        current amount.</li>
+                    <li>You lose if you run out of money</li>
+                </ul>
+                <p>Good luck!</p>
+                   
+            </div>
+            <div class="col">
+                
+                <div class="game-space">
+                    <div class="col-2">
+                        <button id="spin" class="spin" onclick="spinWheel()">Start</button>
+                    </div>
+                    
+                    <!-- <iframe src="https://wheeldecide.com/e.php?c1=0+&c2=28+Black&c3=9+Red&c4=26+Black&c5=30+Red&c6=11+Black&c7=7+Red&c8=20+Black&c9=32+Red&c10=17+Black&c11=5+Red&c12=22+Black&c13=34+Red&c14=15+Black&c15=3+Red&c16=24+Black&c17=36+Red&c18=13+Black&c19=1+Red&c20=00&c21=27+Red&c22=10+Black&c23=25+Red&c24=29+Black&c25=12+Red&c26=8+Black&c27=19+Red&c28=31+Black&c29=18+Red&c30=6+Black&c31=+21+Red&c32=33+Black&c33=16+Red&c34=4+Black&c35=23+Red&c36=35+Black&c37=14+Red&c38=2+Black&col=rou&t=The+Royale+19+%7C+Roulette&time=5" width="500" height="500" scrolling="no" frameborder="0"></iframe> -->
+
+                    <div id="myDIV col">
+                        <img src="../img/roulette_wheel.png" id="roulette-wheel">
+                    </div>
+
+                </div>
+                <style>
+                    .mystyle {
+                        animation: rotate 6s linear;
+                    }
+
+
+                    @keyframes rotate {
+                        from {
+                            transform: rotate(0deg);
+                        }
+
+                        to {
+                            transform: rotate(1079deg);
+                        }
+                    }
+                </style>
+            </div>
+        </div>
+    </main>
+    <script src="gamestysc.js"></script>
+    <script src="roulette.js"></script>
+    <script src="snake.js"></script>
+</body>
+
+</html>
+<!-- Credit to author of cards svg 
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> 
+
+    DICE
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    
+-->

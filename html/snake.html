@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="website of games">
+
+    <!-- meta for favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    
+    <!-- TITLE and STYLESHEETS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="../css/mystyles.css" rel="stylesheet" />
+    <link href="../css/snake.css" rel="stylesheet">
+    <title>games|tysc - snake</title>
+</head>
+
+<body>
+    <header class="nav-menu">
+        <div class="row">
+            <div class="col-3">
+                <h1>games | tysc</h1>
+            </div>
+            <div class="col-1 pt-4">
+                <img src="../img/die5.png" height="40px">
+            </div>
+            <div class="row col-4 pt-4">
+                <nav>
+                    <ul>
+                        <li>
+                            <button type="button"><a href="../index.html" style="text-decoration: none">home</a></button>
+                        </li>
+                        <li>
+                            <button type="button"><a href="roulette.html" style="text-decoration: none">roulette</a></button>
+                        </li>
+                        <li>
+                            <button type="button"><a href="#" style="text-decoration: none">snake</a></button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+
+    <div class="row">
+        <div class="title">
+            <h1>snake</h1>
+        </div>
+        <div class="buttons col-4">
+            <button id="easy" onclick="easyMode()">Easy</button>
+            <button id="normal" onclick="normalMode()">Normal</button>
+            <button id="hard" onclick="hardMode()">Hard</button>
+            <button id="very-hard" onclick="veryHardMode()">Very Hard</button>
+        </div>
+
+        <div class="col-5">
+            <div class="score container">
+                <div class="row">
+                    <p class="col">Score:</p>
+                    <div id="score" class="col">0</div>
+                </div>
+            </div>
+            <div class="snakeboard">
+                <canvas id="snakeboard" width="400" height="400"></canvas>
+            </div>
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+    <br>
+</body>
+
+<script src="../js/snake.js"></script>
+
+</html>

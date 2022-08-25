@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="website of games">
+
+    <!-- meta for favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- TITLE and STYLESHEETS -->
+    <title>games|tysc - home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="css/mystyles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div class="row">
+                <div class="col-3">
+                    <h1>games | tysc</h1>
+                </div>
+                <div class="col pt-4">
+                    <img src="img/die5.png" height="40px">
+                </div>
+            </div>
+
+            <div class="nav-menu row">
+                <nav>
+                    <ul>
+                        <li>
+                            <button type="button"><a href="#" style="text-decoration: none">home</a></button>
+                        </li>
+                        <li>
+                            <button type="button"><a href="html/roulette.html" style="text-decoration: none">roulette</a></button>
+                        </li>
+                        <li>
+                            <button type="button"><a href="html/snake.html" style="text-decoration: none">snake</a></button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="guessGame()">guess.game</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="rockPaperScissors()">rock.paper.scissors</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="chanceDice()">chance.dice</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Slideshow container -->
+        <div class="slideshow-container container mt-lg-5">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+            <div class="numbertext">1 / 2</div>
+            <img src="img/gamestysc-snake-screenshot.png" style="width:100%" class="customBorder">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">2 / 2</div>
+            <img src="img/gamestysc-roulette-screenshot.png" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </main>
+
+    <!--SCRIPTS-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/gamestysc.js"></script>
+
+</body>
+
+</html>
+
+<!-- Credit to author of cards svg 
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> 
+
+    DICE
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+-->
